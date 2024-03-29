@@ -1,0 +1,17 @@
+<h2 style="text-align: center;">GPA Cal </h2>
+
+
+<dx-form [formData]="Scorebox" [colCount]="2" labelLocation="top">
+  <dxi-item [editorOptions]="{placeholder:'ex. jonathan dreak'}" type="text" dataField="Name" isRequired=""></dxi-item>
+  <dxi-item [editorOptions]="{placeholder:'0 - 100'}"  dataField="Thai"></dxi-item>
+  <dxi-item [editorOptions]="{placeholder:'0 - 100'}"  dataField="English"></dxi-item>
+  <dxi-item [editorOptions]="{placeholder:'0 - 100'}"  dataField="Math"></dxi-item>
+  <dxi-item [editorOptions]="{placeholder:'0 - 100'}"  dataField="Science"></dxi-item>
+  <dxi-item [editorOptions]="{placeholder:'0 - 100'}"  dataField="Sport" [colSpan]="1">
+  </dxi-item>
+</dx-form>
+
+
+<div class="btn" id="" style="text-align: center;">
+  <dx-button class="btn-s" (onClick)="getScoreValue()">Submit</dx-button>
+</div>

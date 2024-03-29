@@ -1,0 +1,51 @@
+<h2 class="content-block">Tasks</h2>
+
+<dx-data-grid class="dx-card wide-card"
+  [dataSource]="display"
+  [showBorders]="false"
+  [focusedRowEnabled]="true"
+  [focusedRowIndex]="0"
+  [columnAutoWidth]="true"
+  [columnHidingEnabled]="true">
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+  <dxi-column
+    dataField="name"
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column
+    dataField="thai"
+    [width]="90"
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column
+    dataField="english"
+    [width]="90"
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column
+    dataField="math"
+    [width]="90"
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column
+    dataField="science"
+    [width]="90"
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column
+    dataField="sport"
+    [width]="90"
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column
+    dataField="gpa"
+    [width]="90"
+    [hidingPriority]="2">
+  </dxi-column>
+
+
+</dx-data-grid>
